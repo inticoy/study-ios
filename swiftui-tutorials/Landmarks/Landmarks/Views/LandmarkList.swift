@@ -25,7 +25,7 @@ struct LandmarkList: View {
             }
             .navigationTitle("Landmarks")
         }
-    }
+    }g
 }
 
 struct LandmarkList_Previews: PreviewProvider {
