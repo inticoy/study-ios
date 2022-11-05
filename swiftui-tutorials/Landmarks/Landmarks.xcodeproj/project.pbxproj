@@ -21,6 +21,10 @@
 		DB28472C29167E7A0084BB0F /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB28472B29167E7A0084BB0F /* ProfileSummary.swift */; };
 		DB28472E29167ED30084BB0F /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB28472D29167ED30084BB0F /* HikeBadge.swift */; };
 		DB2847302916803E0084BB0F /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB28472F2916803E0084BB0F /* ProfileEditor.swift */; };
+		DB284733291684030084BB0F /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284732291684030084BB0F /* PageViewController.swift */; };
+		DB284735291684C70084BB0F /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284734291684C70084BB0F /* FeatureCard.swift */; };
+		DB284737291685960084BB0F /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284736291685960084BB0F /* PageView.swift */; };
+		DB284739291687270084BB0F /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB284738291687270084BB0F /* PageControl.swift */; };
 		DBE2CBA028FFFCFE00C91F26 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2CB9F28FFFCFE00C91F26 /* CircleImage.swift */; };
 		DBE2CBA228FFFDC500C91F26 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE2CBA128FFFDC500C91F26 /* MapView.swift */; };
 		DBE2CBB32900032200C91F26 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = DBE2CBA52900032200C91F26 /* LICENSE.txt */; };
@@ -88,6 +92,10 @@
 		DB28472B29167E7A0084BB0F /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		DB28472D29167ED30084BB0F /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
 		DB28472F2916803E0084BB0F /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		DB284732291684030084BB0F /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		DB284734291684C70084BB0F /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		DB284736291685960084BB0F /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		DB284738291687270084BB0F /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		DBE2CB9F28FFFCFE00C91F26 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		DBE2CBA128FFFDC500C91F26 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DBE2CBA52900032200C91F26 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -194,6 +202,10 @@
 		DB28472529167CF60084BB0F /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				DB284734291684C70084BB0F /* FeatureCard.swift */,
+				DB284738291687270084BB0F /* PageControl.swift */,
+				DB284731291683EA0084BB0F /* PageView */,
+				DB28472A29167E690084BB0F /* Profile */,
 				DB28471C2916742A0084BB0F /* CategoryHome.swift */,
 				DBE2CBC92900202400C91F26 /* LandmarkList.swift */,
 				DB28472829167E3A0084BB0F /* ProfileHost.swift */,
@@ -213,6 +225,15 @@
 				DB28472F2916803E0084BB0F /* ProfileEditor.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		DB284731291683EA0084BB0F /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				DB284732291684030084BB0F /* PageViewController.swift */,
+				DB284736291685960084BB0F /* PageView.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 		DBE2CBA32900032200C91F26 /* Resources */ = {
@@ -256,7 +277,6 @@
 		DBE2CBC429001E0B00C91F26 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DB28472A29167E690084BB0F /* Profile */,
 				DB28472529167CF60084BB0F /* Content */,
 				DBF2B47028FFF5C700456917 /* ContentView.swift */,
 			);
@@ -492,11 +512,13 @@
 				DB28472429167CD40084BB0F /* Profile.swift in Sources */,
 				DBF2B47128FFF5C700456917 /* ContentView.swift in Sources */,
 				DB28471D2916742A0084BB0F /* CategoryHome.swift in Sources */,
+				DB284735291684C70084BB0F /* FeatureCard.swift in Sources */,
 				DB28471929166F970084BB0F /* HikeGraph.swift in Sources */,
 				DBE8303B290FAB2400BEFFA5 /* Badge.swift in Sources */,
 				DBE2CBA228FFFDC500C91F26 /* MapView.swift in Sources */,
 				DB28471829166F970084BB0F /* GraphCapsule.swift in Sources */,
 				DBF2B46F28FFF5C700456917 /* LandmarksApp.swift in Sources */,
+				DB284739291687270084BB0F /* PageControl.swift in Sources */,
 				DB1D0EB2290FA19B00509A6C /* FavoriteButton.swift in Sources */,
 				DB284722291676140084BB0F /* CategoryItem.swift in Sources */,
 				DB28471A29166F970084BB0F /* HikeDetail.swift in Sources */,
@@ -505,11 +527,13 @@
 				DB28472929167E3A0084BB0F /* ProfileHost.swift in Sources */,
 				DB28471229166F070084BB0F /* Hike.swift in Sources */,
 				DBE83038290FAAE200BEFFA5 /* RotatedBadgeSymbol.swift in Sources */,
+				DB284737291685960084BB0F /* PageView.swift in Sources */,
 				DBE83036290FAA6A00BEFFA5 /* BadgeSymbol.swift in Sources */,
 				DB2847302916803E0084BB0F /* ProfileEditor.swift in Sources */,
 				DBE2CBCA2900202400C91F26 /* LandmarkList.swift in Sources */,
 				DB28471B29166F970084BB0F /* HikeView.swift in Sources */,
 				DBE2CBCC2900210000C91F26 /* LandmarkDetail.swift in Sources */,
+				DB284733291684030084BB0F /* PageViewController.swift in Sources */,
 				DBE83034290FA6DC00BEFFA5 /* BadgeBackground.swift in Sources */,
 				DB28472E29167ED30084BB0F /* HikeBadge.swift in Sources */,
 				DBE2CBA028FFFCFE00C91F26 /* CircleImage.swift in Sources */,

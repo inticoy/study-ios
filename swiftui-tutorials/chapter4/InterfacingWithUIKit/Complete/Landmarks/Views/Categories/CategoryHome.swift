@@ -1,18 +1,18 @@
-//
-//  CategoryHome.swift
-//  Landmarks
-//
-//  Created by Inticoy on 2022/11/05.
-//
+/*
+See LICENSE folder for this sample’s licensing information.
+
+Abstract:
+A view showing featured landmarks above a list of landmarks grouped by category.
+*/
 
 import SwiftUI
 
 struct CategoryHome: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showingProfile = false
-    
+
     var body: some View {
-        NavigationView(){
+        NavigationView {
             List {
                 PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
                     .aspectRatio(3 / 2, contentMode: .fit)
@@ -23,8 +23,8 @@ struct CategoryHome: View {
                 }
                 .listRowInsets(EdgeInsets())
             }
-            .navigationTitle("Featured")
             .listStyle(.inset)
+            .navigationTitle("Featured")
             .toolbar {
                 Button {
                     showingProfile.toggle()
